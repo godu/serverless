@@ -1,5 +1,5 @@
 import json
+from os import environ
 
 def handler(event, context):
-    print(event)
-    return
+    print(f">> I am {environ.get('WHOAMI')}")
